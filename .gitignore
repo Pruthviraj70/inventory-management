@@ -1,0 +1,48 @@
+# Real local database configuration (safe examples stay versioned)
+/config/*.properties
+!/config/*.properties.example
+
+# Environment files; commit only explicitly safe templates
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Generated Maven/Java output
+/target/
+*.class
+*.jar
+*.war
+
+# Runtime/build/verification logs (keep locally, not in Git)
+*.log
+/logs/
+/docs/*-console.txt
+*.out
+*.err
+*.pid
+*.dump
+
+# OS and editor files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+*.swp
+*.swo
+*~
+
+# Local credential/key material
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.aws/
